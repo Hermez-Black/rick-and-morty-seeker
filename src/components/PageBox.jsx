@@ -1,6 +1,6 @@
 
-export default function PageBox({ number }) {
+export default function PageBox({ number, setNumberPage}) {
   return (
-    <input type="button" className="miniBox" value={number} />
+    <input type="button" onClick={() => setNumberPage(number - 1)} className="miniBox" value={number} />
   )
 }
